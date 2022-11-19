@@ -142,6 +142,7 @@ return [
     'uppercase' => 'The :attribute must be uppercase.',
     'url' => 'The :attribute must be a valid URL.',
     'uuid' => 'The :attribute must be a valid UUID.',
+    'verification_code' => 'The verification code does not match.',
 
     /*
     |--------------------------------------------------------------------------

@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Livewire\Dashboard;
+use App\Http\Livewire\Register;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/dashboard', Dashboard::class)->name('dashboard')->middleware('auth');
+
+Route::get('/', Register::class)->name('register')->middleware('guest');
